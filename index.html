@@ -1,16 +1,34 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Allumettes Game</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1> ALLUMETTES GAME</h1>
-        <div class="matches" id="allumettes"></div>
-        <div id="error"></div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="config-ecran">
+        <h2>JEU DES ALLUMETTES</h2>
+        <label for="nombre-joueur">Nombre de joueurs (entre 2 et 8) :</label>
+        <input type="number" id="nombre-joueur" min="2" max="8">
+        <button id="btnStart">Démarrer le Jeu</button>
+      </div>
+    
+      <!-- Écran principal du jeu -->
+      <div id="ecran-jeu">
+        <h2 id="player-actuel">Tour du joueur</h2>
+        <p id="allumettes-count">Il reste 50 allumettes</p>
+    
+        <!-- Conteneur pour afficher les allumettes restantes -->
+        <div id="allumettes-container"></div>
+    
+        <label for="allumettes-retirees">Nombre d'allumettes à retirer (entre 1 et 6) :</label>
+        <input type="number" id="allumettes-retirees" min="1" max="6">
+        <button id="btn-retirer">Retirer Allumettes</button>
         
-    <script src="script.js"></script>
-</body>
+        <!-- Bouton pour relancer le jeu -->
+        <button id="btnReplay">Rejouer</button>
+    </div>
+    <script src = script.js></script>
+  </body>
 </html>
