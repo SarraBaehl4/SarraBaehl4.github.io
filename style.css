@@ -7,6 +7,11 @@ body {
     margin: 0;
     padding: 20px;
 }
+h2{
+    color: rgb(255, 165, 0);
+    font-size: 2cm;
+    text-shadow: gold;
+}
 
 #config-ecran {
     margin-bottom: 20px;
@@ -32,7 +37,7 @@ body {
     flex-direction: row; /* Aligne les allumettes en ligne horizontale */
     flex-wrap: wrap; /* Permet de passer à une ligne suivante si besoin */
     justify-content: center; /* Centre les allumettes horizontalement */
-    gap: 60px; /* Espace entre chaque allumette */
+    gap: 53px; /* Espace entre chaque allumette */
     max-width: 70%; /* Limite la largeur pour mieux structurer */
     padding: 10px;
     margin: 10px auto; /* Centre le conteneur */
@@ -64,7 +69,7 @@ button {
     margin: 5px;
     border: none;
     border-radius: 5px;
-    background-color: #cd127c;
+    background-color: rgb(255, 165, 0);
     color: white;
     cursor: pointer;
 }
