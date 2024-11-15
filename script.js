@@ -68,7 +68,7 @@ function compteursAllumettes() {
     playerActuel = (playerActuel + 1) % players.length; //multijoueurs par rapport au nombre de joueurs entré au départ
     miseAJourAffichage();
   } else {
-    alert("🎉Le joueur " + players[playerActuel] + " a gagné 🎉");
+    alert("🔥🔥Le joueur " + players[playerActuel] + " a gagné 🔥🔥");
     Replay();
   }
 }
